@@ -3,7 +3,7 @@ import cv2
 img = cv2.imread('FlowerBoy.jpeg', 0)
 #resize dimensions of image
 img = cv2.resize(img, (0,0), fx=2, fy=2)
-img = 
+img = cv2.rotate(img, cv2.cv2.ROTATE_90_CLOCKWISE)
 
 
 cv2.imshow('Image', img)
